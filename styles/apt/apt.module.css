@@ -1,0 +1,25 @@
+.aptMain {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+}
+
+.problemStatement {
+  height: 100%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.solutionArea {
+  background-color: grey;
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
