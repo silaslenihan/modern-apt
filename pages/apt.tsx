@@ -10,6 +10,7 @@ import { description } from "@/constants/types";
 import { Button } from 'rsuite';
 import 'rsuite/dist/rsuite.min.css';
 import Link from "next/link";
+import Results from "@/components/Results";
 
 const APT: NextPage = () => {
     const router = useRouter()
@@ -18,7 +19,10 @@ const APT: NextPage = () => {
     const [description, setDescription] = useState<description>()
     const [code, setCode] = useState("")
 
-    useEffect(() => { setDescription(descriptions[problemId]) }, [problemId])
+    useEffect(() => {
+        setDescription(descriptions[problemId])
+        setCode(descriptions[problemId].initial)
+    }, [problemId])
 
     function handleEditorChange(value: string | undefined) {
         setCode(value || "")
@@ -61,14 +65,18 @@ const APT: NextPage = () => {
                                     </Button>
                                 </div>
                                 <Editor
-                                    height="80vh"
+                                    height="65vh"
                                     defaultLanguage="python"
-                                    defaultValue={description.initial}
                                     value={code}
                                     theme="vs-dark"
                                     onChange={handleEditorChange}
                                 />
                             </div>
+                            <Results
+                                code={code}
+                                description={description}
+                            />
+
                         </div>
                     </div>) : (<div></div>)
             }
