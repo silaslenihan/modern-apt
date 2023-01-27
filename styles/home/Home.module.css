@@ -1,0 +1,34 @@
+.Background{
+  background-color: white;
+  height: 100vh;
+  width: 100vw;
+  overflow: scroll;
+}
+
+.Header{
+  margin: 35px;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+  color: var(--black);
+  background-color: white;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.Title{
+  width: 50vw;
+  align-items: right;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 200;
+  margin-top: -5px;
+  background-color: white;
+
+}
+
+.APTGroup{
+  margin: 30px;
+  background-color: white;
+}
