@@ -2,7 +2,8 @@ export default [
     {
         "id": 1,
         "name": "APT-0",
-        "info": "Due on Sep 3",
+        "due": "09/03/2023",
+        "info": "Do all 6",
         "apts": [
             {
                 "name": "Intro",
@@ -15,7 +16,8 @@ export default [
     {
         "id": 2,
         "name": "APT-1",
-        "info": "Due on Sep 9",
+        "due" :"09/12/2022",
+        "info": "",
         "apts": [
             {
                 "name": "Gravity",
@@ -53,7 +55,8 @@ export default [
     {
         "id": 3,
         "name": "APT-2",
-        "info": "Due on 9/28",
+        "due" : "09/28/2023",
+        "info": "",
         "apts": [
             {
                 "name": "ReadQuizScore",
@@ -95,7 +98,8 @@ export default [
     {
         "id": 4,
         "name": "APT-3",
-        "info": "Due on Oct 7",
+        "due" : "10/07/2023",
+        "info": "",
         "apts": [
             {
                 "name": "DNAcgratio",
@@ -142,6 +146,7 @@ export default [
     {
         "id": 5,
         "name": "OPTIONAL - NOT FOR CREDIT",
+        "due": "",
         "info": "Use to practice for APT quiz 1",
         "apts": [
             {
@@ -165,7 +170,8 @@ export default [
     {
         "id": 6,
         "name": "APT-4",
-        "info": "Due on Oct 19, Complete 5, two are required, plus three more, the others are extra",
+        "due" : "10/19/2023",
+        "info": "Complete 5, two are required, plus three more, the others are extra",
         "apts": [
             {
                 "name": "IsSpecial",
@@ -212,7 +218,8 @@ export default [
     {
         "id": 7,
         "name": "APT-5",
-        "info": "Due on Oct 28, Complete 5, others are extra",
+        "due" : "10/28/2023",
+        "info": "Complete 5, others are extra",
         "apts": [
             {
                 "name": "CarrotBoxes",
@@ -251,7 +258,8 @@ export default [
     {
         "id": 8,
         "name": "APT-6",
-        "info": "Due on Nov 9, Complete 5, others are extra",
+        "due" : "11/09/2023",
+        "info": "Complete 5, others are extra",
         "apts": [
             {
                 "name": "BordaCount",
@@ -301,7 +309,8 @@ export default [
     {
         "id": 9,
         "name": "APT-7",
-        "info": "Due on Nov 19, Complete 5, two are required, plus do three more, the others are extra",
+        "due" : "11/19/2023",
+        "info": "Complete 5, two are required, plus do three more, the others are extra",
         "apts": [
             {
                 "name": "PickyEater",
@@ -352,6 +361,7 @@ export default [
     {
         "id": 10,
         "name": "OPTIONAL - NOT FOR CREDIT",
+        "due": "",
         "info": "Use to practice for APT Quiz 2. These are problems from two different APT Quizzes",
         "apts": [
             {

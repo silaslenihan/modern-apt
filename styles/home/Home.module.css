@@ -14,6 +14,7 @@
   background-color: white;
   align-items: flex-start;
   justify-content: space-between;
+  cursor: pointer;
 }
 
 .Title{
@@ -31,4 +32,53 @@
 .APTGroup{
   margin: 30px;
   background-color: white;
+}
+
+.Large{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.Medium{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.Small{
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.APT{
+  border-color:var(--gray);
+  border-width:2px;
+  height:40px;
+  margin-bottom:10px;
+}
+.APT:hover{
+  background-color:whitesmoke;
+}
+
+.BlueTab{
+  display: flex;
+  background-color: var(--blue);
+  width: 30px;
+  margin: -20px;
+}
+
+.Circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  border: solid 2px;
+}
+
+.EndTab{
+  display: flex;
+  width: 160px;
+  height: 40px;
+  margin-right: -20px;
+  justify-content: center;
+  align-items: center;
 }
