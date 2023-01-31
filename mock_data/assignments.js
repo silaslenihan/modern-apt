@@ -2,10 +2,14 @@ export default [
     {
         "id": 1,
         "name": "APT-0",
-        "info": "Due on Sep 3",
+        "due": "09/03/2023",
+        "progress": 0,
+        "info": "Do all 6",
         "apts": [
             {
+                
                 "name": "Intro",
+                "tests": 20,
                 "tags": [
                     "Required"
                 ]
@@ -15,34 +19,41 @@ export default [
     {
         "id": 2,
         "name": "APT-1",
-        "info": "Due on Sep 9",
+        "due" :"09/12/2022",
+        "progress": 100,
+        "info": "",
         "apts": [
             {
                 "name": "Gravity",
+                "tests": 100,
                 "tags": [
                     "Required"
                 ]
             },
             {
                 "name": "Bogsquare",
+                "tests": 100,
                 "tags": [
                     "Required"
                 ]
             },
             {
                 "name": "Cone",
+                "tests": 100,
                 "tags": [
                     "Required"
                 ]
             },
             {
                 "name": "Grayscale",
+                "tests": 100,
                 "tags": [
                     "Required"
                 ]
             },
             {
                 "name": "Laundry",
+                "tests": 100,
                 "tags": [
                     "Lec 4",
                     "Required"
@@ -53,16 +64,20 @@ export default [
     {
         "id": 3,
         "name": "APT-2",
-        "info": "Due on 9/28",
+        "due" : "09/28/2022",
+        "progress": 60,
+        "info": "Think about lecture",
         "apts": [
             {
                 "name": "ReadQuizScore",
+                "tests": 300/300,
                 "tags": [
                     "Required"
                 ]
             },
             {
                 "name": "RemoveMiddle",
+                "tests": 300/300,
                 "tags": [
                     "Required",
                     "Split"
@@ -70,6 +85,7 @@ export default [
             },
             {
                 "name": "PortManteau",
+                "tests": 20/300,
                 "tags": [
                     "Required",
                     "Slice"
@@ -77,12 +93,14 @@ export default [
             },
             {
                 "name": "TotalWeight",
+                "tests": 300/300,
                 "tags": [
                     "Required"
                 ]
             },
             {
                 "name": "SentenceLength",
+                "tests": 200/300,
                 "tags": [
                     "Required",
                     "Loop",
@@ -95,16 +113,20 @@ export default [
     {
         "id": 4,
         "name": "APT-3",
-        "info": "Due on Oct 7",
+        "due" : "10/07/2023",
+        "progress": 80,
+        "info": "",
         "apts": [
             {
                 "name": "DNAcgratio",
+                "tests": 300/300,
                 "tags": [
                     "Required"
                 ]
             },
             {
                 "name": "Pancakes",
+                "tests": 300/300,
                 "tags": [
                     "Lec 10",
                     "Required"
@@ -112,6 +134,7 @@ export default [
             },
             {
                 "name": "Bagels",
+                "tests": 300/300,
                 "tags": [
                     "Lec 9",
                     "Required"
@@ -119,6 +142,7 @@ export default [
             },
             {
                 "name": "CreateAcronym",
+                "tests": 300/300,
                 "tags": [
                     "Loop",
                     "Indexing",
@@ -127,12 +151,14 @@ export default [
             },
             {
                 "name": "Emphasize",
+                "tests": 300/300,
                 "tags": [
                     "Required"
                 ]
             },
             {
                 "name": "LastNameFirst",
+                "tests": 300/300,
                 "tags": [
                     "Required"
                 ]
@@ -142,6 +168,7 @@ export default [
     {
         "id": 5,
         "name": "OPTIONAL - NOT FOR CREDIT",
+        "due": "",
         "info": "Use to practice for APT quiz 1",
         "apts": [
             {
@@ -165,30 +192,37 @@ export default [
     {
         "id": 6,
         "name": "APT-4",
-        "info": "Due on Oct 19, Complete 5, two are required, plus three more, the others are extra",
+        "due" : "10/19/2023",
+        "progress": 80,
+        "info": "Complete 5, two are required, plus three more, the others are extra",
         "apts": [
             {
                 "name": "IsSpecial",
+                "tests": 0/300,
                 "tags": []
             },
             {
                 "name": "MorseLikeCode",
+                "tests": 0/300,
                 "tags": [
                     "Parallel Lists"
                 ]
             },
             {
                 "name": "Pikachu",
+                "tests": 20/300,
                 "tags": [
                     "While Loop"
                 ]
             },
             {
                 "name": "Calculator",
+                "tests": 200/300,
                 "tags": []
             },
             {
                 "name": "Family",
+                "tests": 100/300,
                 "tags": [
                     "Lec 13",
                     "Challenge"
@@ -196,6 +230,7 @@ export default [
             },
             {
                 "name": "TxMsg",
+                "tests": 300/300,
                 "tags": [
                     "Lec 12",
                     "Required"
@@ -203,6 +238,7 @@ export default [
             },
             {
                 "name": "ScoreIt",
+                "tests": 0/300,
                 "tags": [
                     "Required"
                 ]
@@ -212,7 +248,9 @@ export default [
     {
         "id": 7,
         "name": "APT-5",
-        "info": "Due on Oct 28, Complete 5, others are extra",
+        "due" : "10/28/2023",
+        "progress": 80,
+        "info": "Complete 5, others are extra",
         "apts": [
             {
                 "name": "CarrotBoxes",
@@ -251,7 +289,9 @@ export default [
     {
         "id": 8,
         "name": "APT-6",
-        "info": "Due on Nov 9, Complete 5, others are extra",
+        "due" : "11/09/2023",
+        "progress": 80,
+        "info": "Complete 5, others are extra",
         "apts": [
             {
                 "name": "BordaCount",
@@ -301,7 +341,9 @@ export default [
     {
         "id": 9,
         "name": "APT-7",
-        "info": "Due on Nov 19, Complete 5, two are required, plus do three more, the others are extra",
+        "due" : "11/19/2023",
+        "progress": 80,
+        "info": "Complete 5, two are required, plus do three more, the others are extra",
         "apts": [
             {
                 "name": "PickyEater",
@@ -352,7 +394,9 @@ export default [
     {
         "id": 10,
         "name": "OPTIONAL - NOT FOR CREDIT",
-        "info": "Use to practice for APT Quiz 2. These are problems from two different APT Quizzes",
+        "due": "",
+        "progress": 80,
+        "info": "",
         "apts": [
             {
                 "name": "InsideCount",
