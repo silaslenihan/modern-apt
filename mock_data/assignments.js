@@ -173,18 +173,22 @@ export default [
         "apts": [
             {
                 "name": "BookRating",
+                "tests": 100,
                 "tags": []
             },
             {
                 "name": "SpecificWords",
+                "tests": 100,
                 "tags": []
             },
             {
                 "name": "WhichSubjects",
+                "tests": 100,
                 "tags": []
             },
             {
                 "name": "CodeBreaker",
+                "tests": 100,
                 "tags": []
             }
         ]
@@ -254,32 +258,38 @@ export default [
         "apts": [
             {
                 "name": "CarrotBoxes",
+                "tests": 100,
                 "tags": [
                     "Suggested"
                 ]
             },
             {
                 "name": "EatingGood",
+                "tests": 100,
                 "tags": [
                     "Lec 13"
                 ]
             },
             {
                 "name": "SandwichBar",
+                "tests": 100,
                 "tags": [
                     "Lec 14"
                 ]
             },
             {
                 "name": "BagFitter",
+                "tests": 100,
                 "tags": []
             },
             {
                 "name": "Common",
+                "tests": 100,
                 "tags": []
             },
             {
                 "name": "VenmoTracker",
+                "tests": 100,
                 "tags": [
                     "Lec 14"
                 ]
@@ -295,32 +305,38 @@ export default [
         "apts": [
             {
                 "name": "BordaCount",
+                "tests": 100,
                 "tags": [
                     "Lab 8"
                 ]
             },
             {
                 "name": "MemberCheck",
+                "tests": 100,
                 "tags": []
             },
             {
                 "name": "WordCompositionGame",
+                "tests": 100,
                 "tags": []
             },
             {
                 "name": "Badges",
+                "tests": 100,
                 "tags": [
                     "Sets"
                 ]
             },
             {
                 "name": "SortedFreqs",
+                "tests": 100,
                 "tags": [
                     "Sorted Sets"
                 ]
             },
             {
                 "name": "SortByFreqs",
+                "tests": 100,
                 "tags": [
                     "Sort"
                 ]
@@ -331,6 +347,7 @@ export default [
             },
             {
                 "name": "AnagramFree",
+                "tests": 100,
                 "tags": [
                     "Sort",
                     "Challenge"
@@ -347,44 +364,53 @@ export default [
         "apts": [
             {
                 "name": "PickyEater",
+                "tests": 100,
                 "tags": []
             },
             {
                 "name": "CharityDonor",
+                "tests": 100,
                 "tags": [
                     "Required"
                 ]
             },
             {
                 "name": "VoteRigging",
+                "tests": 100,
                 "tags": [
                     "Greedy"
                 ]
             },
             {
                 "name": "TrophyShelf",
+                "tests": 100,
                 "tags": []
             },
             {
                 "name": "SubstringFreq",
+                "tests": 100,
                 "tags": []
             },
             {
                 "name": "Blanket",
+                "tests": 100,
                 "tags": [
                     "Challenge"
                 ]
             },
             {
                 "name": "DataLinkingCount",
+                "tests": 100,
                 "tags": []
             },
             {
                 "name": "SecretCode",
+                "tests": 100,
                 "tags": []
             },
             {
                 "name": "MedalTable",
+                "tests": 100,
                 "tags": [
                     "Required"
                 ]
@@ -400,26 +426,32 @@ export default [
         "apts": [
             {
                 "name": "InsideCount",
+                "tests": 100,
                 "tags": []
             },
             {
                 "name": "WhichFirstNames",
+                "tests": 100,
                 "tags": []
             },
             {
                 "name": "BuyGroceries",
+                "tests": 100,
                 "tags": []
             },
             {
                 "name": "NotFirst",
+                "tests": 100,
                 "tags": []
             },
             {
                 "name": "SortCount",
+                "tests": 100,
                 "tags": []
             },
             {
                 "name": "PopularEnding",
+                "tests": 100,
                 "tags": []
             }
         ]
