@@ -1,459 +1,171 @@
 export default [
-    {
-        "id": 1,
-        "name": "APT-0",
-        "due": "09/03/2023",
-        "progress": 0,
-        "info": "Do all 6",
-        "apts": [
-            {
-                
-                "name": "Intro",
-                "tests": 20,
-                "tags": [
-                    "Required"
-                ]
-            }
-        ]
-    },
-    {
-        "id": 2,
-        "name": "APT-1",
-        "due" :"09/12/2022",
-        "progress": 100,
-        "info": "",
-        "apts": [
-            {
-                "name": "Gravity",
-                "tests": 100,
-                "tags": [
-                    "Required"
-                ]
-            },
-            {
-                "name": "Bogsquare",
-                "tests": 100,
-                "tags": [
-                    "Required"
-                ]
-            },
-            {
-                "name": "Cone",
-                "tests": 100,
-                "tags": [
-                    "Required"
-                ]
-            },
-            {
-                "name": "Grayscale",
-                "tests": 100,
-                "tags": [
-                    "Required"
-                ]
-            },
-            {
-                "name": "Laundry",
-                "tests": 100,
-                "tags": [
-                    "Lec 4",
-                    "Required"
-                ]
-            }
-        ]
-    },
-    {
-        "id": 3,
-        "name": "APT-2",
-        "due" : "09/28/2022",
-        "progress": 60,
-        "info": "Think about lecture",
-        "apts": [
-            {
-                "name": "ReadQuizScore",
-                "tests": 300/300,
-                "tags": [
-                    "Required"
-                ]
-            },
-            {
-                "name": "RemoveMiddle",
-                "tests": 300/300,
-                "tags": [
-                    "Required",
-                    "Split"
-                ]
-            },
-            {
-                "name": "PortManteau",
-                "tests": 20/300,
-                "tags": [
-                    "Required",
-                    "Slice"
-                ]
-            },
-            {
-                "name": "TotalWeight",
-                "tests": 300/300,
-                "tags": [
-                    "Required"
-                ]
-            },
-            {
-                "name": "SentenceLength",
-                "tests": 200/300,
-                "tags": [
-                    "Required",
-                    "Loop",
-                    "Split",
-                    "Count"
-                ]
-            }
-        ]
-    },
-    {
-        "id": 4,
-        "name": "APT-3",
-        "due" : "10/07/2023",
-        "progress": 80,
-        "info": "",
-        "apts": [
-            {
-                "name": "DNAcgratio",
-                "tests": 300/300,
-                "tags": [
-                    "Required"
-                ]
-            },
-            {
-                "name": "Pancakes",
-                "tests": 300/300,
-                "tags": [
-                    "Lec 10",
-                    "Required"
-                ]
-            },
-            {
-                "name": "Bagels",
-                "tests": 300/300,
-                "tags": [
-                    "Lec 9",
-                    "Required"
-                ]
-            },
-            {
-                "name": "CreateAcronym",
-                "tests": 300/300,
-                "tags": [
-                    "Loop",
-                    "Indexing",
-                    "Challenge"
-                ]
-            },
-            {
-                "name": "Emphasize",
-                "tests": 300/300,
-                "tags": [
-                    "Required"
-                ]
-            },
-            {
-                "name": "LastNameFirst",
-                "tests": 300/300,
-                "tags": [
-                    "Required"
-                ]
-            }
-        ]
-    },
-    {
-        "id": 5,
-        "name": "OPTIONAL - NOT FOR CREDIT",
-        "due": "",
-        "info": "Use to practice for APT quiz 1",
-        "apts": [
-            {
-                "name": "BookRating",
-                "tests": 100,
-                "tags": []
-            },
-            {
-                "name": "SpecificWords",
-                "tests": 100,
-                "tags": []
-            },
-            {
-                "name": "WhichSubjects",
-                "tests": 100,
-                "tags": []
-            },
-            {
-                "name": "CodeBreaker",
-                "tests": 100,
-                "tags": []
-            }
-        ]
-    },
-    {
-        "id": 6,
-        "name": "APT-4",
-        "due" : "10/19/2023",
-        "progress": 80,
-        "info": "Complete 5, two are required, plus three more, the others are extra",
-        "apts": [
-            {
-                "name": "IsSpecial",
-                "tests": 0/300,
-                "tags": []
-            },
-            {
-                "name": "MorseLikeCode",
-                "tests": 0/300,
-                "tags": [
-                    "Parallel Lists"
-                ]
-            },
-            {
-                "name": "Pikachu",
-                "tests": 20/300,
-                "tags": [
-                    "While Loop"
-                ]
-            },
-            {
-                "name": "Calculator",
-                "tests": 200/300,
-                "tags": []
-            },
-            {
-                "name": "Family",
-                "tests": 100/300,
-                "tags": [
-                    "Lec 13",
-                    "Challenge"
-                ]
-            },
-            {
-                "name": "TxMsg",
-                "tests": 300/300,
-                "tags": [
-                    "Lec 12",
-                    "Required"
-                ]
-            },
-            {
-                "name": "ScoreIt",
-                "tests": 0/300,
-                "tags": [
-                    "Required"
-                ]
-            }
-        ]
-    },
-    {
-        "id": 7,
-        "name": "APT-5",
-        "due" : "10/28/2023",
-        "progress": 80,
-        "info": "Complete 5, others are extra",
-        "apts": [
-            {
-                "name": "CarrotBoxes",
-                "tests": 100,
-                "tags": [
-                    "Suggested"
-                ]
-            },
-            {
-                "name": "EatingGood",
-                "tests": 100,
-                "tags": [
-                    "Lec 13"
-                ]
-            },
-            {
-                "name": "SandwichBar",
-                "tests": 100,
-                "tags": [
-                    "Lec 14"
-                ]
-            },
-            {
-                "name": "BagFitter",
-                "tests": 100,
-                "tags": []
-            },
-            {
-                "name": "Common",
-                "tests": 100,
-                "tags": []
-            },
-            {
-                "name": "VenmoTracker",
-                "tests": 100,
-                "tags": [
-                    "Lec 14"
-                ]
-            }
-        ]
-    },
-    {
-        "id": 8,
-        "name": "APT-6",
-        "due" : "11/09/2023",
-        "progress": 80,
-        "info": "Complete 5, others are extra",
-        "apts": [
-            {
-                "name": "BordaCount",
-                "tests": 100,
-                "tags": [
-                    "Lab 8"
-                ]
-            },
-            {
-                "name": "MemberCheck",
-                "tests": 100,
-                "tags": []
-            },
-            {
-                "name": "WordCompositionGame",
-                "tests": 100,
-                "tags": []
-            },
-            {
-                "name": "Badges",
-                "tests": 100,
-                "tags": [
-                    "Sets"
-                ]
-            },
-            {
-                "name": "SortedFreqs",
-                "tests": 100,
-                "tags": [
-                    "Sorted Sets"
-                ]
-            },
-            {
-                "name": "SortByFreqs",
-                "tests": 100,
-                "tags": [
-                    "Sort"
-                ]
-            },
-            {
-                "name": "IRVoting",
-                "tags": []
-            },
-            {
-                "name": "AnagramFree",
-                "tests": 100,
-                "tags": [
-                    "Sort",
-                    "Challenge"
-                ]
-            }
-        ]
-    },
-    {
-        "id": 9,
-        "name": "APT-7",
-        "due" : "11/19/2023",
-        "progress": 80,
-        "info": "Complete 5, two are required, plus do three more, the others are extra",
-        "apts": [
-            {
-                "name": "PickyEater",
-                "tests": 100,
-                "tags": []
-            },
-            {
-                "name": "CharityDonor",
-                "tests": 100,
-                "tags": [
-                    "Required"
-                ]
-            },
-            {
-                "name": "VoteRigging",
-                "tests": 100,
-                "tags": [
-                    "Greedy"
-                ]
-            },
-            {
-                "name": "TrophyShelf",
-                "tests": 100,
-                "tags": []
-            },
-            {
-                "name": "SubstringFreq",
-                "tests": 100,
-                "tags": []
-            },
-            {
-                "name": "Blanket",
-                "tests": 100,
-                "tags": [
-                    "Challenge"
-                ]
-            },
-            {
-                "name": "DataLinkingCount",
-                "tests": 100,
-                "tags": []
-            },
-            {
-                "name": "SecretCode",
-                "tests": 100,
-                "tags": []
-            },
-            {
-                "name": "MedalTable",
-                "tests": 100,
-                "tags": [
-                    "Required"
-                ]
-            }
-        ]
-    },
-    {
-        "id": 10,
-        "name": "OPTIONAL - NOT FOR CREDIT",
-        "due": "",
-        "progress": 80,
-        "info": "",
-        "apts": [
-            {
-                "name": "InsideCount",
-                "tests": 100,
-                "tags": []
-            },
-            {
-                "name": "WhichFirstNames",
-                "tests": 100,
-                "tags": []
-            },
-            {
-                "name": "BuyGroceries",
-                "tests": 100,
-                "tags": []
-            },
-            {
-                "name": "NotFirst",
-                "tests": 100,
-                "tags": []
-            },
-            {
-                "name": "SortCount",
-                "tests": 100,
-                "tags": []
-            },
-            {
-                "name": "PopularEnding",
-                "tests": 100,
-                "tags": []
-            }
-        ]
-    }
+  {
+    id: 1,
+    name: "APT-0",
+    due: "09/03/2023",
+    progress: 0,
+    info: "Do all 6",
+    apts: [{ name: "Intro", tests: 20, tags: ["Required"], id: "33" }],
+  },
+  {
+    id: 2,
+    name: "APT-1",
+    due: "09/12/2022",
+    progress: 100,
+    info: "",
+    apts: [
+      { name: "Gravity", tests: 100, tags: ["Required"], id: "28" },
+      { name: "Bogsquare", tests: 100, tags: ["Required"], id: "6" },
+      { name: "Cone", tests: 100, tags: ["Required"], id: "15" },
+      { name: "Grayscale", tests: 100, tags: ["Required"], id: "29" },
+      { name: "Laundry", tests: 100, tags: ["Lec 4", "Required"], id: "36" },
+    ],
+  },
+  {
+    id: 3,
+    name: "APT-2",
+    due: "09/28/2022",
+    progress: 60,
+    info: "Think about lecture",
+    apts: [
+      { name: "ReadQuizScore", tests: 1, tags: ["Required"], id: "54" },
+      { name: "RemoveMiddle", tests: 1, tags: ["Required", "Split"], id: "55" },
+      {
+        name: "PortManteau",
+        tests: 0.06666666666666667,
+        tags: ["Required", "Slice"],
+        id: "52",
+      },
+      { name: "TotalWeight", tests: 1, tags: ["Required"], id: "69" },
+      {
+        name: "SentenceLength",
+        tests: 0.6666666666666666,
+        tags: ["Required", "Loop", "Split", "Count"],
+        id: "59",
+      },
+    ],
+  },
+  {
+    id: 4,
+    name: "APT-3",
+    due: "10/07/2023",
+    progress: 80,
+    info: "",
+    apts: [
+      { name: "DNAcgratio", tests: 1, tags: ["Required"], id: "19" },
+      { name: "Pancakes", tests: 1, tags: ["Lec 10", "Required"], id: "46" },
+      { name: "Bagels", tests: 1, tags: ["Lec 9", "Required"], id: "3" },
+      {
+        name: "CreateAcronym",
+        tests: 1,
+        tags: ["Loop", "Indexing", "Challenge"],
+        id: "18",
+      },
+      { name: "Emphasize", tests: 1, tags: ["Required"], id: "24" },
+      { name: "LastNameFirst", tests: 1, tags: ["Required"], id: "35" },
+    ],
+  },
+  {
+    id: 5,
+    name: "OPTIONAL - NOT FOR CREDIT",
+    due: "",
+    info: "Use to practice for APT quiz 1",
+    apts: [
+      { name: "BookRating", tags: [], id: "7" },
+      { name: "SpecificWords", tags: [], id: "64" },
+      { name: "WhichSubjects", tags: [], id: "75" },
+      { name: "CodeBreaker", tags: [], id: "13" },
+    ],
+  },
+  {
+    id: 6,
+    name: "APT-4",
+    due: "10/19/2023",
+    progress: 80,
+    info: "Complete 5, two are required, plus three more, the others are extra",
+    apts: [
+      { name: "IsSpecial", tests: 0, tags: [], id: "34" },
+      { name: "MorseLikeCode", tests: 0, tags: ["Parallel Lists"], id: "43" },
+      {
+        name: "Pikachu",
+        tests: 0.06666666666666667,
+        tags: ["While Loop"],
+        id: "50",
+      },
+      { name: "Calculator", tests: 0.6666666666666666, tags: [], id: "10" },
+      {
+        name: "Family",
+        tests: 0.3333333333333333,
+        tags: ["Lec 13", "Challenge"],
+        id: "26",
+      },
+      { name: "TxMsg", tests: 1, tags: ["Lec 12", "Required"], id: "71" },
+      { name: "ScoreIt", tests: 0, tags: ["Required"], id: "57" },
+    ],
+  },
+  {
+    id: 7,
+    name: "APT-5",
+    due: "10/28/2023",
+    progress: 80,
+    info: "Complete 5, others are extra",
+    apts: [
+      { name: "CarrotBoxes", tags: ["Suggested"], id: "11" },
+      { name: "EatingGood", tags: ["Lec 13"], id: "23" },
+      { name: "SandwichBar", tags: ["Lec 14"], id: "56" },
+      { name: "BagFitter", tags: [], id: "2" },
+      { name: "Common", tags: [], id: "14" },
+      { name: "VenmoTracker", tags: ["Lec 14"], id: "72" },
+    ],
+  },
+  {
+    id: 8,
+    name: "APT-6",
+    due: "11/09/2023",
+    progress: 80,
+    info: "Complete 5, others are extra",
+    apts: [
+      { name: "BordaCount", tags: ["Lab 8"], id: "8" },
+      { name: "MemberCheck", tags: [], id: "40" },
+      { name: "WordCompositionGame", tags: [], id: "76" },
+      { name: "Badges", tags: ["Sets"], id: "1" },
+      { name: "SortedFreqs", tags: ["Sorted Sets"], id: "63" },
+      { name: "SortByFreqs", tags: ["Sort"], id: "60" },
+      { name: "IRVoting", tags: [], id: "30" },
+      { name: "AnagramFree", tags: ["Sort", "Challenge"], id: "0" },
+    ],
+  },
+  {
+    id: 9,
+    name: "APT-7",
+    due: "11/19/2023",
+    progress: 80,
+    info: "Complete 5, two are required, plus do three more, the others are extra",
+    apts: [
+      { name: "PickyEater", tags: [], id: "49" },
+      { name: "CharityDonor", tags: ["Required"], id: "12" },
+      { name: "VoteRigging", tags: ["Greedy"], id: "73" },
+      { name: "TrophyShelf", tags: [], id: "70" },
+      { name: "SubstringFreq", tags: [], id: "66" },
+      { name: "Blanket", tags: ["Challenge"], id: "4" },
+      { name: "DataLinkingCount", tags: [], id: "20" },
+      { name: "SecretCode", tags: [], id: "58" },
+      { name: "MedalTable", tags: ["Required"], id: "39" },
+    ],
+  },
+  {
+    id: 10,
+    name: "OPTIONAL - NOT FOR CREDIT",
+    due: "",
+    progress: 80,
+    info: "",
+    apts: [
+      { name: "InsideCount", tags: [], id: "31" },
+      { name: "WhichFirstNames", tags: [], id: "74" },
+      { name: "BuyGroceries", tags: [], id: "9" },
+      { name: "NotFirst", tags: [], id: "45" },
+      { name: "SortCount", tags: [], id: "61" },
+      { name: "PopularEnding", tags: [], id: "51" },
+    ],
+  },
 ];
