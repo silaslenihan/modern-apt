@@ -4,13 +4,13 @@ import { Panel, Progress, Modal, Carousel } from 'rsuite';
 import 'rsuite/dist/rsuite.min.css';
 import assignments from "../mock_data/assignments.js";
 import Link from 'next/link';
-import {useState } from 'react';
+import { useState } from 'react';
 
 export default function Home() {
   const description = "Description";
   const date = new Date();
 
-  
+
 
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
@@ -41,13 +41,14 @@ export default function Home() {
 
         <div className={styles.APTGroup}>
           {assignments.sort((a, b) => Date.parse(a.due) - Date.parse(b.due)).map((assignment) => (
-            <Panel style={{ marginBottom: "20px", fontFamily:"inherit", fontWeight: 700, backgroundColor: assignment.progress == 100 ? ("var(--light-green)") : (date > new Date(assignment.due) ? ("var(--light-red)") : ("white")), borderColor: assignment.progress == 100 ? ("var(--green)") : (date > new Date(assignment.due) ? ("var(--red)") : ("var(--blue)")), borderWidth: "2px" }} header={
+            <Panel defaultExpanded={assignment.current} style={{ marginBottom: "20px", fontFamily: "inherit", fontWeight: 700, backgroundColor: assignment.progress == 100 ? ("var(--light-green)") : (date > new Date(assignment.due) ? ("var(--light-red)") : ("white")), borderColor: assignment.progress == 100 ? ("var(--green)") : (date > new Date(assignment.due) ? ("var(--red)") : ("var(--blue)")), borderWidth: "2px" }} header={
               <div style={{ display: "flex", flexDirection: "row" }}>
                 <div style={{ backgroundColor: assignment.progress == 100 ? ("var(--green)") : (date > new Date(assignment.due) ? ("var(--red)") : ("var(--blue)")) }} className={styles.BlueTab}></div>
                 <div style={{ display: "flex", flexDirection: "column", marginLeft: "25px", width: "100%" }}>
-                  <div className={styles.Medium} style={{marginLeft: "10px" }}>{assignment.name}</div>
+                  <div className={styles.Medium} style={{ marginLeft: "10px" }}>{assignment.name}</div>
                   <div className={styles.Small} style={{ marginLeft: "10px", marginTop: "5px" }}>
-                    {assignment.due} {assignment.info}
+                    {new Date(assignment.due).toLocaleDateString("en-US", { weekday: 'long' }) + ", " + assignment.due} {assignment.info ? " | " : ""}
+                    {assignment.info}
                   </div>
                   <Progress.Line style={{ marginTop: "5px" }} percent={assignment.progress} showInfo={false} strokeColor={assignment.progress == 100 ? ("var(--green)") : (date > new Date(assignment.due) ? ("var(--red)") : ("var(--blue)"))} />
                 </div>
@@ -60,7 +61,7 @@ export default function Home() {
                 <div style={{ display: "flex", flexDirection: "column", marginLeft: "35px", width: "100%" }}>
                   {assignment.apts.map((apt, index) => (
                     <Link style={{ textDecoration: 'none' }} href={`/apt?id=${assignment.apts[index].id}`}>
-                      <Panel className={styles.APT} style={{ borderColor: assignment.progress == 100 ? ("var(--green)") : (date > new Date(assignment.due) ? ("var(--red)") : ("var(--blue)")) }} header={
+                      <Panel className={styles.APT} style={{ backgroundColor: apt.tests == 100 ? ("var(--light-green)") : (date > new Date(assignment.due) ? ("var(--light-red)") : ("white")), borderColor: apt.tests == 100 ? ("var(--green)") : (date > new Date(assignment.due) ? ("var(--red)") : ("var(--blue)")) }} header={
                         <div style={{ marginTop: "-20px", display: "flex", flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
                           <div style={{ display: "flex", flexDirection: "row" }}>
                             <Progress.Circle trailColor='var(--dark-gray)' strokeWidth={15} strokeColor={apt.tests == 100 ? ("var(--green)") : "var(--red)"} style={{ width: 20, marginLeft: "-5px" }} percent={apt.tests} showInfo={false} />
@@ -68,7 +69,7 @@ export default function Home() {
                               <div>{apt.name}</div>
                               <div>{description ? (
                                 <div style={{ display: "flex", flexDirection: "row" }}>
-                                  <div className={styles.Small} style={{ marginLeft: "10px", marginRight: "10px", color: assignment.progress == 100 ? ("var(--green)") : (date > new Date(assignment.due) ? ("var(--red)") : ("var(--gray)")) }}> | </div>
+                                  <div className={styles.Small} style={{ marginLeft: "10px", marginRight: "10px", color: apt.tests == 100 ? ("var(--green)") : (date > new Date(assignment.due) ? ("var(--red)") : ("var(--gray)")) }}> | </div>
                                   <div className={styles.Small}>{description}</div>
                                 </div>) : (<div></div>)} </div>
                             </div>

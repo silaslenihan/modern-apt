@@ -26,7 +26,7 @@ export default function Results(props: props) {
 
         <div className={styles.resultsMain}>
 
-            <Nav appearance="tabs">
+            <Nav appearance="tabs" style={{ fontWeight: "700" }}>
                 <Nav.Item active={active == 0} onClick={() => { props.setTab(0) }}>Visualizer</Nav.Item>
                 <Nav.Item active={active == 1} onClick={() => { props.setTab(1) }}>Console</Nav.Item>
                 <Nav.Item active={active == 2} onClick={() => { props.setTab(2) }}>Results</Nav.Item>
