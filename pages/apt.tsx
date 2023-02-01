@@ -11,10 +11,14 @@ import { Button } from 'rsuite';
 import 'rsuite/dist/rsuite.min.css';
 import Link from "next/link";
 import Results from "@/components/Results";
+import ArrowLeftLineIcon from '@rsuite/icons/ArrowLeftLine';
+import PlayIcon from '@rsuite/icons/legacy/Play';
+
 
 const APT: NextPage = () => {
     const router = useRouter()
     const problemId = +(router.query.id || 0)
+    const [tab, setTab] = useState(0)
 
     const [description, setDescription] = useState<description>()
     const [code, setCode] = useState("")
@@ -28,6 +32,13 @@ const APT: NextPage = () => {
         setCode(value || "")
     }
 
+    const scrollToComponent = () => {
+        const element = document.getElementById("scroll-to-element");
+        if (element) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
+    };
+
     return (
         <div>
             {
@@ -40,8 +51,10 @@ const APT: NextPage = () => {
                         <div className={styles.problemStatement}>
                             <div className={styles.problemDescription}>
                                 <div className={styles.problemHeader}>
-
-                                    {description.name}
+                                    <Link className={styles.backArrow} href="/">
+                                        <ArrowLeftLineIcon></ArrowLeftLineIcon>
+                                    </Link>
+                                    <h1 className={styles.problemTitle}>{description.name}</h1>
                                 </div>
                                 <div style={{ padding: "20px" }}>
                                     {HtmlParser(description.problem)}
@@ -60,9 +73,19 @@ const APT: NextPage = () => {
                         <div className={styles.solutionArea}>
                             <div className={styles.submissionBox}>
                                 <div style={{ height: "50px", padding: "10px", marginLeft: "20px" }}>
-                                    <Button color="green" appearance="primary">
-                                        Submit
-                                    </Button>
+                                    <button className={styles.playButton} onClick={() => {
+                                        setTab(1)
+                                        scrollToComponent()
+                                    }}>
+                                        <PlayIcon></PlayIcon>
+                                    </button>
+
+                                    <button className={styles.submitButton} onClick={() => {
+                                        setTab(2)
+                                        scrollToComponent()
+                                    }}>
+                                        SUBMIT
+                                    </button>
                                 </div>
                                 <Editor
                                     height="65vh"
@@ -72,10 +95,14 @@ const APT: NextPage = () => {
                                     onChange={handleEditorChange}
                                 />
                             </div>
-                            <Results
-                                code={code}
-                                description={description}
-                            />
+                            <div id="scroll-to-element">
+                                <Results
+                                    code={code}
+                                    description={description}
+                                    tab={tab}
+                                    setTab={setTab}
+                                />
+                            </div>
 
                         </div>
                     </div>) : (<div></div>)

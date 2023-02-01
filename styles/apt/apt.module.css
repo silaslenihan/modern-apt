@@ -37,10 +37,40 @@
 }
 
 .problemHeader {
+  background-color: #9fc1dc;
+  display: flex;
+  align-items: center;
+  font-size: 40px;
+}
+
+.submissionResult {
+  padding: 25px;
+  margin-top: 10px;
+}
+
+.resultTest {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.problemTitle {
   font-size: 40px;
   font-weight: 700;
+  flex: 1;
   text-align: center;
-  background-color: #9fc1dc;
+  margin-right: 25px;
+}
+
+.backArrow {
+  text-decoration: none;
+  color: black;
+}
+
+.backArrow:hover {
+  color: #505050;
 }
 
 .solutionArea {
@@ -50,6 +80,34 @@
   margin-top: 10px;
   overflow: scroll;
   height: 100vh;
+}
+
+.submitButton {
+  background-color: #2d5b7b;
+  padding: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 700;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.playButton {
+  background-color: #2d5b7b;
+  padding: 5px;
+  font-weight: 700;
+  border-radius: 5px;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.submitButton:hover {
+  background-color: #387199;
+}
+
+.playButton:hover {
+  background-color: #387199;
 }
 
 .submissionBox {
