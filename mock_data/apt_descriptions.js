@@ -15,6 +15,7 @@ export default [
     copyright:
       "This problem statement is the exclusive and proprietary property of\nTopCoder, Inc. Any unauthorized use or reproduction of this information\nwithout the prior written consent of TopCoder, Inc. is strictly\nprohibited. &copy;2010, TopCoder, Inc. All rights reserved.",
     formName: "anagramfree",
+    example: ["abcd", "abdc", "dabc", "bacd"],
   },
   {
     filename: "Badges.py",
@@ -32,6 +33,11 @@ export default [
     copyright:
       '<a rel="license"\nhref="http://creativecommons.org/licenses/by-sa/3.0/"><img\nalt="Creative Commons License" style="border-width:0"\nsrc="http://i.creativecommons.org/l/by-sa/3.0/88x31.png"\n/></a><br />This work\nis copyright &copy; Owen Astrachan and\nis licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 Unported License</a>.',
     formName: "badges",
+    example: [
+      ["wolf", "bear", "lion"],
+      ["fire", "camping", "spanish"],
+      ["fire knots camping", "spanish fire internet", "fire camping spanish"],
+    ],
   },
   {
     filename: "BagFitter.py",
